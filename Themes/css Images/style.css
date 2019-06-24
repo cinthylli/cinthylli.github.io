@@ -83,7 +83,7 @@ nav li a:hover {
 
 body section {
     display: flex;
-    background-color: #AE1EB3;
+    background-color:var(--background-dark-color);
 }
 
 
