@@ -58,7 +58,8 @@ nav {
     font-size: var(--font-size-large);
         padding: var(--space-single);
     display: flex;   
-    justify-content: space-between;
+    justify-content: flex-end;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
