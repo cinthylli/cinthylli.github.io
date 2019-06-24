@@ -80,6 +80,11 @@ nav li a:hover {
     color:var(--background-dark-letter-color-light);
 }
 
+body section {
+    display: flex;
+    background-color: #AE1EB3;
+}
+
 
 .coverPage {
     background-image: url("../img/wallpapers/purple-690724.jpg");
@@ -105,4 +110,5 @@ nav li a:hover {
     line-height: 120%;
     
 }
+
 
