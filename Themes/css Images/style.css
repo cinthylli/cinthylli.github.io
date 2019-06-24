@@ -1,53 +1,58 @@
-/*Selector de Etiqueta*/
-header{
-    background: black;
-    color: aliceblue;
-    font-family: sans-serif;
-    font: Oswald;
-    font-weight: 100;
-    
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext');
+
+:root {
     
 }
 
-h3{
-    font-family: sans-serif;
-    font: Raleway;
-    font-weight: 100;
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-size:  12px;
+    font-family: 'Oswald', sans-serif;
 }
 
-body {
-    background: purple;
+nav {
+    background-color: rgb(92, 8, 78);
+    color: wheat;
+    display: flex;
+    padding:  10px;
+    justify-content: space-between;
+    align-items: center;
 }
-strong {
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a {
+    color: rgb(231, 224, 224);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+.coverPage {
+    background-image: url("../img/wallpapers/purple-690724.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position:  top;
+    height: 500px;
+    color: blanchedalmond;
     
 }
 
-/*Selector Descendente*/
-
-head meta title {
-    background: coral;
-}
-
-/*Selector de Clase*/
-
-.link {
-    background: gray;
-}
-
-.project-portfolio {
-    
-}
-.menu {
-    
-}
-
-.logo{
-    
-}
-
-/*Selector de ID*/
-
-#Porfolio {
-    
+.coverPage-Description {
+    color: antiquewhite;
+    padding: 10%;
+    font-size: 550%;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
