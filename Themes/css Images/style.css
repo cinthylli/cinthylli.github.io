@@ -4,9 +4,10 @@
     /* -------------------------------------------Colors */
     /* -------------------------------------------Background Dark */
     --background-dark-color:#090413;
-    --background-dark-letter-color:antiquewhite;
+    --background-dark-letter-color-light:antiquewhite;
+    --background-dark-letter-color-dark:#AE1EB3;
     /* -------------------------------------------Background Light */
-    --background-light-color:#210745;
+    --background-light-color:#e9daff;
     --background-light-letter-color:#210B70;
     /* -------------------------------------------End Colors */
     /* -------------------------------------------Font */
@@ -15,37 +16,37 @@
     --font-body: 'Raleway', sans-serif;
     --font-quotes:'Kurale', serif;
     /* -------------------------------------------Font Size*/
-    --font-size-small:10px;
-    --font-size-medium:16px;
-    --font-size-large:20px;
+    --font-size-small:16px;
+    --font-size-medium:20px;
+    --font-size-large:30px;
     --font-size-extra-large:40px;
     --font-size-huge:500%;
     /* -------------------------------------------End Font Size*/
     /* -------------------------------------------Line Height*/
     --font-line-height:120%;
     /* -------------------------------------------End Line Height*/
-
+    
     /* -------------------------------------------End Font */
     /* -------------------------------------------Espaciado */
     --space-single:10px;
     --space-double:20px;
-
+    
     /* -------------------------------------------End Espaciado */
 }
 /* ------------------------------------------------End Variables */
 html {
-      padding: 0px;
-      margin: 0px;
-
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--background-dark-color);
+        font-size:var(--font-size-medium);
+        font-family: var(--font-body);
+    
 }
 body {
     padding: 0px;
     margin: 0px;
-    background-color: var(--background-dark-color);
-    font-size:var(--font-size-medium);
-    font-family: var(--font-body);
     font: 400;
-    color: var(--background-dark-letter-color);
+    color: var(--background-dark-letter-color-light);
     line-height: var(--font-line-height);
     
 }
@@ -54,8 +55,9 @@ nav {
     font-family: var(--font-titles);
     background-color:var(--background-dark-color);
     color: background-dark-letter-color;
-    display: flex;
-    padding:  var(--space-single);
+    font-size: var(--font-size-large);
+        padding: var(--space-single);
+    display: flex;   
     justify-content: space-between;
     align-items: center;
 }
@@ -70,13 +72,14 @@ nav li {
 }
 
 nav li a {
-    color:var(--background-dark-letter-color);
+    color:var(--background-dark-letter-color-light);
     text-decoration: none;
 }
 
 nav li a:hover {
-    color:var(--background-dark-letter-color);
+    color:var(--background-dark-letter-color-light);
 }
+
 
 .coverPage {
     background-image: url("../img/wallpapers/purple-690724.jpg");
@@ -84,17 +87,22 @@ nav li a:hover {
     background-repeat: no-repeat;
     background-position: center top;
     height: 500px;
-
-    color:var(--background-dark-letter-color);
     
+    color:var(--background-dark-letter-color-light);
+    
+}
+.coverPage-Description strong {
+    color: var(--background-dark-letter-color-dark);
 }
 
 .coverPage-Description {
     font-family: var(--font-impact);
-    color:var(--background-dark-letter-color);
-    padding: var(--space-single);
+    color:var(--background-dark-letter-color-light);
+    padding: var(--space-double);
     font-size: var(--font-size-huge);
     margin-block-start: 0px;
     margin-block-end: 0px;
+    line-height: 120%;
+    
 }
 
