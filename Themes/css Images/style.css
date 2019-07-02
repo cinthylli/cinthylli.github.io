@@ -57,8 +57,10 @@ nav {
     color: background-dark-letter-color;
     font-size: var(--font-size-large);
         padding: var(--space-single);
+    max-width: 100%;
     display: flex;   
-    justify-content: flex-end;
+    flex: 1;
+    justify-content:space-between;
     /* justify-content: space-between; */
     align-items: center;
 }
@@ -86,6 +88,10 @@ body section {
     background-color:var(--background-dark-color);
 }
 
+.logo {
+    width: 50px;
+    height: 50px;
+}
 
 .coverPage {
     background-image: url("../img/wallpapers/purple-690724.jpg");
@@ -112,4 +118,16 @@ body section {
     
 }
 
+/* -----------------------------Responsive Design Start*/
+@media screen and (max-width:1024) {
 
+}
+/* -------------------- Responsive Design
+@media screen and (max-width:768px) {}
+/* -------------------- Responsive Design End
+@media screen and (max-width:480px) {}
+/* -------------------- Responsive Design
+/* -------------------- Responsive Design
+@media screen and (max-width:320px) {}
+
+/* -----------------------------Responsive Design End*/
